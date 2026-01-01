@@ -1,0 +1,34 @@
+# -------------------------
+# Proyecto
+# -------------------------
+PROJECT_NAME           = "@PROJECT_NAME@"
+PROJECT_NUMBER         = "@PROJECT_VERSION@"
+OUTPUT_DIRECTORY       = "@CMAKE_CURRENT_BINARY_DIR@/docs"
+
+# -------------------------
+# Entrada
+# -------------------------
+INPUT                  = @DOXYGEN_INPUT_DIRS_STR@
+RECURSIVE              = YES
+FILE_PATTERNS          = *.h *.hpp *.cpp
+
+# -------------------------
+# Extracción
+# -------------------------
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = YES
+EXTRACT_STATIC         = YES
+
+# -------------------------
+# Salida
+# -------------------------
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO
+QUIET                  = NO
+
+# -------------------------
+# Diagramas (opcional)
+# -------------------------
+HAVE_DOT               = YES
+CALL_GRAPH             = YES
+CALLER_GRAPH           = YES

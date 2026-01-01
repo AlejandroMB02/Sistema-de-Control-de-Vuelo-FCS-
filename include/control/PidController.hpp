@@ -4,6 +4,21 @@
 #include <algorithm>
 #include <chrono>
 
+/**
+ * @namespace drone::control
+ * @brief Módulos de control para el sistema de vuelo del UAV.
+ *
+ * Este namespace agrupa los componentes responsables del control dinámico
+ * del dron, incluyendo controladores clásicos (PID), lógica de estabilización
+ * y regulación de estados como actitud, velocidad o posición.
+ *
+ * Los algoritmos definidos aquí operan sobre señales continuas discretizadas
+ * y no dependen directamente del hardware, permitiendo su reutilización y
+ * testeo en simulación.
+ *
+ * @note Este namespace no debe contener código dependiente de sensores,
+ * actuadores o drivers de bajo nivel.
+ */
 namespace drone::control {
 
 /**
