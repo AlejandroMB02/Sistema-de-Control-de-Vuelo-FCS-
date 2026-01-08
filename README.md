@@ -29,7 +29,7 @@ El proyecto utiliza herramientas estándar de la industria aeroespacial y de rob
 El sistema se divide en módulos independientes para facilitar la integración y el testeo:
 
 ### 1. Control de Actitud e Integración Temporal
-[cite_start]Se utiliza el tipo `std::chrono::duration` para todos los cálculos físicos, eliminando errores de unidades y garantizando que las constantes $K_p$, $K_i$ y $K_d$ operen correctamente independientemente de la frecuencia del bucle[cite: 1].
+Se utiliza el tipo `std::chrono::duration` para todos los cálculos físicos, eliminando errores de unidades y garantizando que las constantes $K_p$, $K_i$ y $K_d$ operen correctamente independientemente de la frecuencia del bucle.
 
 ### 2. Lógica de Seguridad (FSM)
 La máquina de estados actúa como un "guardián" del sistema, impidiendo transiciones críticas (como pasar de `IDLE` directamente a `FLYING`) y gestionando estados de error como `FAILSAFE` o `EMERGENCY_STOP`.
